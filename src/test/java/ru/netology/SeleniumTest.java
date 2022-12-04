@@ -27,7 +27,7 @@ public class SeleniumTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         driver = new ChromeDriver();
-        driver.get("http://localhost:9999");
+
     }
 
     @AfterEach
@@ -38,6 +38,7 @@ public class SeleniumTest {
 
     @Test
     void testRight1() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Чехов Антон");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+78889994455");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -49,6 +50,7 @@ public class SeleniumTest {
 
     @Test
     void testRight2() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Ибн Аль-Банна Аль-Марракеши");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+78889994455");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -60,6 +62,7 @@ public class SeleniumTest {
 
     @Test
     void testName3() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+78889994455");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -71,6 +74,7 @@ public class SeleniumTest {
 
     @Test
     void testPhone4() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Шаляпин Федор");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -82,6 +86,7 @@ public class SeleniumTest {
 
     @Test
     void testEmptyForm5() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -93,6 +98,7 @@ public class SeleniumTest {
 
     @Test
     void testName6() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Anton Chekhov");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+78889994455");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -104,6 +110,7 @@ public class SeleniumTest {
 
     @Test
     void testPhone7() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Шаляпин Федор");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+phonenumber");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -115,6 +122,7 @@ public class SeleniumTest {
 
     @Test
     void testRight8() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Шаляпин Фёдор");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+78889994455");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -126,6 +134,7 @@ public class SeleniumTest {
 
     @Test
     void testPhone9() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Як Йоала");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("89997774455");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -137,6 +146,7 @@ public class SeleniumTest {
 
     @Test
     void testPhone10() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Анна Николь Варламова");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+788899955123");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -148,6 +158,7 @@ public class SeleniumTest {
 
     @Test
     void testRight11() {
+        driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("span[data-test-id=name] input")).sendKeys("Чехов Антон");
         driver.findElement(By.cssSelector("span[data-test-id=phone] input")).sendKeys("+78889994455");
         driver.findElement(By.cssSelector("button.button")).click();
